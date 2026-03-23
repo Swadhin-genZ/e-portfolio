@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!--Remixcon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+   <!--styles.css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Responsive Protfolio website - Swadhin</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav_logo">Swadhin</a>
+      <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list" id="nav_list">
+          <li><a href="#home"     class="nav_link">Home</a></li>
+          <li><a href="#about"    class="nav_link">About</a></li>
+          <li><a href="#projects" class="nav_link">Projects</a></li>
+          <li><a href="#skills"   class="nav_link">Skills</a></li>
+          <li><a href="#resume"   class="nav_link">Resume</a></li>
+          <li><a href="#contact"  class="nav_link">Contact</a></li>
+        </ul>
+        <div class="nav_close" id="nav_close"><i class="ri-close-line"></i></div>
+      </div>
+      <div class="nav_toggle" id="nav_toggle"><i class="ri-menu-line"></i></div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- HOME -->
+    <section class="home section home_section" id="home">
+      <div class="home_container container grid">
+        <div class="home_content">
+          <div class="home_image">
+            <div class="home_placeholder"><i class="ri-user-3-line"></i></div>
+          </div>
+          <div class="home_social">
+            <a href="https://www.linkedin.com/in/md-rashedul-islam-shadhin-106a78275/" target="_blank" class="home_link"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/Swadhin-genZ" target="_blank" class="home_link"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+        <div class="home_data grid">
+          <p class="home_subtitle">Hi, I'm a <span id="home_typed"></span></p>
+          <h1 class="home_title">Md. Rashedul Islam Shadhin</h1>
+          <p class="home_description">Web developer and designer based in Dhaka, Bangladesh, specializing in creating websites for businesses. See my portfolio, which includes websites, designs, and more.</p>
+          <div class="home_button">
+            <a href="#" class="button"><i class="ri-download-2-line"></i> Download CV</a>
+            <a href="#projects" class="button button_ghost">Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section_title reveal">About Me</h2>
+        <div class="about_container grid">
+          <div class="about_img_wrap reveal">
+            <i class="ri-user-smile-line"></i>
+          </div>
+          <div class="about_info reveal">
+            <p class="about_description">
+              I'm <span>Md. Rashedul Islam Shadhin</span>, a passionate web developer from <span>Dhaka, Bangladesh</span>. I love building clean, fast, and accessible web experiences that help businesses grow online.
+            </p>
+            <p class="about_description" style="margin-top:.75rem;">
+              With a strong foundation in both front-end and back-end technologies, I bring ideas to life through code. I care deeply about <span>user experience</span>, performance, and writing maintainable code.
+            </p>
+            <div class="about_stats" style="margin-top:2rem;">
+              <div class="about_stat">
+                <div class="about_stat-num">2+</div>
+                <div class="about_stat-label">Years Exp.</div>
+              </div>
+              <div class="about_stat">
+                <div class="about_stat-num">20+</div>
+                <div class="about_stat-label">Projects</div>
+              </div>
+              <div class="about_stat">
+                <div class="about_stat-num">10+</div>
+                <div class="about_stat-label">Clients</div>
+              </div>
+            </div>
+            <div style="margin-top:2rem;">
+              <a href="#contact" class="button">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section_title reveal">Projects</h2>
+        <div class="projects_grid grid reveal">
+
+          <div class="project_card">
+            <div class="project_icon"><i class="ri-shopping-bag-line"></i></div>
+            <h3 class="project_title">E-Commerce Website</h3>
+            <p class="project_description">A fully responsive online store with product listing, cart, and checkout features. Clean UI with smooth animations.</p>
+            <div class="project_tags">
+              <span class="project_tag">HTML</span>
+              <span class="project_tag">CSS</span>
+              <span class="project_tag">JavaScript</span>
+            </div>
+            <div class="project_links">
+              <a href="#" class="project_link"><i class="ri-github-line"></i> Code</a>
+              <a href="#" class="project_link"><i class="ri-external-link-line"></i> Live</a>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_icon"><i class="ri-task-line"></i></div>
+            <h3 class="project_title">Task Manager App</h3>
+            <p class="project_description">A productivity app with drag-and-drop tasks, categories, and local storage. Fully responsive across devices.</p>
+            <div class="project_tags">
+              <span class="project_tag">React</span>
+              <span class="project_tag">CSS</span>
+              <span class="project_tag">LocalStorage</span>
+            </div>
+            <div class="project_links">
+              <a href="#" class="project_link"><i class="ri-github-line"></i> Code</a>
+              <a href="#" class="project_link"><i class="ri-external-link-line"></i> Live</a>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_icon"><i class="ri-restaurant-line"></i></div>
+            <h3 class="project_title">Restaurant Landing Page</h3>
+            <p class="project_description">A beautiful landing page for a restaurant featuring a menu, gallery section, and a reservation form.</p>
+            <div class="project_tags">
+              <span class="project_tag">HTML</span>
+              <span class="project_tag">SCSS</span>
+              <span class="project_tag">JS</span>
+            </div>
+            <div class="project_links">
+              <a href="#" class="project_link"><i class="ri-github-line"></i> Code</a>
+              <a href="#" class="project_link"><i class="ri-external-link-line"></i> Live</a>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_icon"><i class="ri-weather-line"></i></div>
+            <h3 class="project_title">Weather App</h3>
+            <p class="project_description">A real-time weather app using OpenWeather API. Search by city and view current conditions and forecasts.</p>
+            <div class="project_tags">
+              <span class="project_tag">JavaScript</span>
+              <span class="project_tag">API</span>
+              <span class="project_tag">CSS</span>
+            </div>
+            <div class="project_links">
+              <a href="#" class="project_link"><i class="ri-github-line"></i> Code</a>
+              <a href="#" class="project_link"><i class="ri-external-link-line"></i> Live</a>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_icon"><i class="ri-article-line"></i></div>
+            <h3 class="project_title">Blog Platform</h3>
+            <p class="project_description">A full-stack blog platform with user authentication, create/edit/delete posts, and a rich text editor.</p>
+            <div class="project_tags">
+              <span class="project_tag">Node.js</span>
+              <span class="project_tag">MongoDB</span>
+              <span class="project_tag">Express</span>
+            </div>
+            <div class="project_links">
+              <a href="#" class="project_link"><i class="ri-github-line"></i> Code</a>
+              <a href="#" class="project_link"><i class="ri-external-link-line"></i> Live</a>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_icon"><i class="ri-palette-line"></i></div>
+            <h3 class="project_title">Portfolio Template</h3>
+            <p class="project_description">A clean, responsive portfolio template with dark theme, smooth scroll, and animated sections.</p>
+            <div class="project_tags">
+              <span class="project_tag">HTML</span>
+              <span class="project_tag">CSS</span>
+              <span class="project_tag">JS</span>
+            </div>
+            <div class="project_links">
+              <a href="https://github.com/Swadhin-genZ" class="project_link"><i class="ri-github-line"></i> Code</a>
+              <a href="#" class="project_link"><i class="ri-external-link-line"></i> Live</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section_title reveal">Skills</h2>
+        <div class="skills_container grid" id="skillsGrid">
+
+          <div class="skills_group reveal">
+            <h3 class="skills_title"><i class="ri-code-s-slash-line"></i> Frontend</h3>
+            <div class="skill_item">
+              <div class="skill_header"><span class="skill_name">HTML5 / CSS3</span><span class="skill_pct">95%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:95%"></div></div>
+            </div>
+            <div class="skill_item" style="margin-top:1rem;">
+              <div class="skill_header"><span class="skill_name">JavaScript</span><span class="skill_pct">80%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill_item" style="margin-top:1rem;">
+              <div class="skill_header"><span class="skill_name">React.js</span><span class="skill_pct">70%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill_item" style="margin-top:1rem;">
+              <div class="skill_header"><span class="skill_name">Tailwind CSS</span><span class="skill_pct">85%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:85%"></div></div>
+            </div>
+          </div>
+
+          <div class="skills_group reveal">
+            <h3 class="skills_title"><i class="ri-server-line"></i> Backend &amp; Tools</h3>
+            <div class="skill_item">
+              <div class="skill_header"><span class="skill_name">Node.js</span><span class="skill_pct">65%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:65%"></div></div>
+            </div>
+            <div class="skill_item" style="margin-top:1rem;">
+              <div class="skill_header"><span class="skill_name">MongoDB</span><span class="skill_pct">60%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:60%"></div></div>
+            </div>
+            <div class="skill_item" style="margin-top:1rem;">
+              <div class="skill_header"><span class="skill_name">Git &amp; GitHub</span><span class="skill_pct">88%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill_item" style="margin-top:1rem;">
+              <div class="skill_header"><span class="skill_name">Figma</span><span class="skill_pct">72%</span></div>
+              <div class="skill_bar"><div class="skill_fill" style="--w:72%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume section" id="resume">
+      <div class="container">
+        <h2 class="section_title reveal">Resume</h2>
+        <div class="resume_container grid">
+
+          <div class="resume_group reveal">
+            <h3 class="resume_group-title"><i class="ri-graduation-cap-line"></i> Education</h3>
+            <div class="resume_list">
+              <div class="resume_item">
+                <p class="resume_subtitle">2022 – Present</p>
+                <h4 class="resume_title">B.Sc in Computer Science</h4>
+                <p class="resume_date">University of Dhaka, Bangladesh</p>
+              </div>
+              <div class="resume_item">
+                <p class="resume_subtitle">2019 – 2021</p>
+                <h4 class="resume_title">Higher Secondary Certificate</h4>
+                <p class="resume_date">Dhaka College, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume_group reveal">
+            <h3 class="resume_group-title"><i class="ri-briefcase-line"></i> Experience</h3>
+            <div class="resume_list">
+              <div class="resume_item">
+                <p class="resume_subtitle">2023 – Present</p>
+                <h4 class="resume_title">Freelance Web Developer</h4>
+                <p class="resume_date">Self-employed · Remote</p>
+              </div>
+              <div class="resume_item">
+                <p class="resume_subtitle">2022 – 2023</p>
+                <h4 class="resume_title">Junior Frontend Developer</h4>
+                <p class="resume_date">Tech Startup, Dhaka</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+          <a href="#" class="button"><i class="ri-download-2-line"></i> Download Full CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section_title reveal">Contact Me</h2>
+        <div class="contact_container grid">
+
+          <div class="contact_info reveal">
+            <div class="contact_card">
+              <div class="contact_icon"><i class="ri-mail-line"></i></div>
+              <div>
+                <p class="contact_label">Email</p>
+                <p class="contact_value">shadhin@email.com</p>
+              </div>
+            </div>
+            <div class="contact_card">
+              <div class="contact_icon"><i class="ri-phone-line"></i></div>
+              <div>
+                <p class="contact_label">Phone</p>
+                <p class="contact_value">+880 1XXX-XXXXXX</p>
+              </div>
+            </div>
+            <div class="contact_card">
+              <div class="contact_icon"><i class="ri-map-pin-line"></i></div>
+              <div>
+                <p class="contact_label">Location</p>
+                <p class="contact_value">Dhaka, Bangladesh</p>
+              </div>
+            </div>
+            <div class="contact_card">
+              <div class="contact_icon"><i class="ri-linkedin-box-line"></i></div>
+              <div>
+                <p class="contact_label">LinkedIn</p>
+                <p class="contact_value">md-rashedul-islam-shadhin</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact_form reveal">
+            <div class="form_group">
+              <label class="form_label">Your Name</label>
+              <input type="text" class="form_input" placeholder="Enter your name"/>
+            </div>
+            <div class="form_group">
+              <label class="form_label">Email Address</label>
+              <input type="email" class="form_input" placeholder="Enter your email"/>
+            </div>
+            <div class="form_group">
+              <label class="form_label">Subject</label>
+              <input type="text" class="form_input" placeholder="Project inquiry..."/>
+            </div>
+            <div class="form_group">
+              <label class="form_label">Message</label>
+              <textarea class="form_textarea" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button class="button" id="sendBtn"><i class="ri-send-plane-line"></i> Send Message</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#home" class="footer_logo">Swadhin</a>
+    <div class="footer_socials">
+      <a href="https://github.com/Swadhin-genZ" target="_blank" class="footer_social"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/md-rashedul-islam-shadhin-106a78275/" target="_blank" class="footer_social"><i class="ri-linkedin-box-fill"></i></a>
+      <a href="#" class="footer_social"><i class="ri-twitter-x-line"></i></a>
+    </div>
+    <p class="footer_copy">© 2025 <span>Swadhin</span>. All rights reserved.</p>
+  </footer>
+
+  <!-- SCROLL UP -->
+  <a href="#home" class="scrollup" id="scrollup"><i class="ri-arrow-up-line"></i></a>
+
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+      <!--main.js-->
+       <script src="assets/js/main.js"></script>
+</body>
+</html>
