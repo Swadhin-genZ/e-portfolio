@@ -403,19 +403,19 @@
           <div class="contact_form reveal" id="contact_mail">
             <div class="form_group">
               <label class="form_label">Your Name</label>
-              <input type="text" class="form_input" placeholder="Enter your name"/>
+              <input type="text" id="name" class="form_input" placeholder="Enter your name" required/>
             </div>
             <div class="form_group">
               <label class="form_label">Email Address</label>
-              <input type="email" class="form_input" placeholder="Enter your email"/>
+              <input type="email" id="email" class="form_input" placeholder="Enter your email" required/>
             </div>
             <div class="form_group">
               <label class="form_label">Subject</label>
-              <input type="text" class="form_input" placeholder="Project inquiry..."/>
+              <input type="text" id="subject" class="form_input" placeholder="Project inquiry..."/>
             </div>
             <div class="form_group">
               <label class="form_label">Message</label>
-              <textarea class="form_textarea" placeholder="Tell me about your project..."></textarea>
+              <textarea class="form_textarea" id="message" placeholder="Tell me about your project..."></textarea>
             </div>
             <button class="button" id="sendBtn"><i class="ri-send-plane-line"></i> Send Message</button>
           </div>
@@ -444,5 +444,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
       <!--main.js-->
        <script src="assets/js/main.js"></script>
+       <!--EmailJS-->
+       <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+       <script>
+(function(){
+  emailjs.init("2xlnTqlsgmVjk-qo5"); // from EmailJS dashboard
+})();
+</script>
+
+<script>
+document.getElementById("sendBtn").addEventListener("click", function(e){
+  e.preventDefault();
+
+  const params = {
+    from_name: document.getElementById("name").value,
+    from_email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
+  };
+
+  emailjs.send("service_bbku3ynD", "template_myo27qb", params)
+    .then(() => {
+      alert("Message sent successfully!");
+    })
+    .catch(() => {
+      alert("Failed to send message.");
+    });
+});
+</script>
+
 </body>
 </html>
