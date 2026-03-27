@@ -184,10 +184,7 @@
       box-shadow: 0 0 0 8px hsla(var(--hue),80%,48%,.1), 0 8px 40px var(--first-color-glow);
       position: relative;
     }
-    .home_image img{
-      position:relative;
-      top:110px;
-    }
+   
     .home_image::before {
       content: '';
       position: absolute; inset: 0;
@@ -195,6 +192,12 @@
       background: linear-gradient(180deg, transparent 60%, hsla(var(--hue),80%,48%,.12));
     }
     .home_img { width: 200px; filter: drop-shadow(0 4px 16px hsla(0,0%,0%,.3)); }
+
+     .home_image img{
+      position:relative;
+      top:110px;
+    }
+    
     .home_placeholder {
       width: 200px; height: 200px;
       display: flex; align-items: center; justify-content: center;
