@@ -13,7 +13,7 @@
 
     /* ===== TYPED.JS ===== */
     new Typed('#home_typed', {
-      strings: ['Web Developer', 'Software Engineer', 'Freelancer'],
+      strings: ['CSE Student', 'AI & ML Enthusiast', 'IoT Enthusiast'],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 1500,
